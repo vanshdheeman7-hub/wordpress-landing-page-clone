@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        div{
+            background-color: yellow;
+        }
+        .paad{
+            background-color: green;
+            text-align: center;
+        }
+        #tatti{
+            background-color: rgb(250, 83, 250);
+        }
+        div > p{
+            background-color: rgb(253, 82, 82);
+        }
+        *{     /*this is universal selector i.e ye neche waali property sbpe lagegi*/
+            margin: 100;
+            padding: 100;
+        }
+        a:visited {
+            color: pink;
+        }
+        a:link{
+            color: yellowgreen;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: rgba(134, 17, 17, 0.925);
+        }
+        p:first-child{
+            color: rgb(43, 43, 226);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        this is a div,but the problem is agar koi or dusra div bhi hoga toh vo bhi yellow ho jayga and what if hume vo yellow nhi chahiye ho
+    </div>
+    <div class="paad">
+        this div color changes according to its class style only,not just like styling simple div,and styling is done by using dot(.)
+    </div>
+    <div id="tatti">
+        this is also same like class but id is unique and class can be same so id styling can be used only elements having that id but elements having same class can be used by one class styling.ID styling is done by #.
+
+    </div>
+    <div>
+        this is not inside &lt;p&gt;
+        <p>this is div k andr ka only para.For child selector there &lt; p &gt; should the child of div only not like div-&gt;article-&gt;then article k andr &lt;p&gt;</p>
+    </div>
+    
+    </div>
+    <div>
+        
+        <section>
+            <p>
+                this is descendant para i.e.it is inside section and section is inside div.
+                do like this for descendant styling
+                all in small -&gt; DIV P {BACKGROUND COLOR: RED }.
+            </p>
+        </section>
+    </div>
+    <a href="https://www.google.com">go to Google</a>
+    <p>yahape jb google ko ek baar visit kr lenge tab uska color pink ho jayga due to a:visited in style</p>
+    <a href="https://www.youtube.com">go to Youtube</a>
+    <p>
+        yahape jo abhi visit nhi kra hai link uska color yellow green ho jayga due to a:link in style
+        a:active se jb bhi us link pr click krenge toh uska background-color vo ho jayga jo style mei kra hai.
+        a:hover se agr us link ko touch bhi krenge tab uska background-color vo ho jayga jo style mei kra hai.
+    </p>
+    <section>
+        <p>
+            i am first.
+        </p>
+        <p>
+            i am second.
+        </p>
+    </section>
+</body>
+</html>

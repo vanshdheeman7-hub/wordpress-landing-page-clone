@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margins,padding,border</title>
+    <img src="margin_border.png " width="500" alt="margin,border,padding picture">
+    <style>
+        .box{
+            background-color: yellow;
+        }
+        .box1{
+            color: red;
+            padding: 10px;
+            margin: 10px;
+            border: 4px solid green;
+            height:100px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color: blue;
+            padding: 10px;
+            margin: 10px;
+            border: 4px solid green;
+            height:100px;
+            box-sizing: border-box;
+        }
+        p{
+            background-color: chartreuse;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box box1"> this is first box</div>
+    <div class="box box2"> this is second box</div>
+    <div>padding creates a space around its element from all side</div>
+    <div> margin breaks the element from its parent range like here yellow color divides into two after applying margin</div>
+    <div>if i write only height i.e. its the height of only content.if after height i write box-sizing:border -box then the total height is content+padding+border (not+ margin)</div>
+    <p>
+        here after after giving margins,border,padding to both there is overlapping of margins of bottom of first and upper of second and jiski max mergin hai vahi bss ek baar lagegi overlapping area mei
+    </p>
+    <img src="margin_overlapping.png" alt="mergin overlapping">
+    
+
+</body>
+</html>

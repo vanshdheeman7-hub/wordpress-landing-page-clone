@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fonts decoration</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size:50px;
+            font-weight: 500;
+            
+            text-decoration: underline;
+            text-decoration-color: rgb(153, 19, 2);
+            font-style: italic;
+            line-height: 6;
+            text-decoration-thickness: 7px;/*it increases thickness of underline */
+            text-indent: 375px;/*thora side me kr diya text ko ek dum left se*/
+        }
+        p{
+            font-family: "poppins";
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: blue;
+            text-align: end;
+        }
+        div{
+            font-size: large;
+            font-weight: 400;
+            
+        }
+        section{
+            text-transform: capitalize;
+            line-height: 2;
+        }
+        aside{
+            text-transform: lowercase;
+            
+        }
+        .lorem{
+            width: 45px;
+            border: 2px solid red;
+            text-overflow: ellipsis;
+            overflow: hidden;            
+        }
+    </style>
+</head>
+<body>
+    <h1>this is heading</h1>
+    <div>line height gives distance betweeen two line</div>
+    <p>here poppins is imported font from google</p>
+    <section> here first letter of all  is small</section>
+    <aside>Here First Letter Of All Is Capital</aside>
+    <div class="lorem"> text overflow text is coming out of box(border) .(overflow:) use krna important hai and usme hidden ya scroll ya kuch bhi  use kr skte hai .ellipsis use krne  se dotted aayga.clip use krne se vo text chuph jayga   </div>
+</body>
+</html>
